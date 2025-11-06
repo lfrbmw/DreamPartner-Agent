@@ -1,0 +1,36 @@
+.navigation-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  background: #fff;
+  border-top: 1px solid #f0f0f0;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+  z-index: 100;
+}
+
+.navigation-menu {
+  border: none;
+  background: transparent;
+
+  .ant-menu-item {
+    height: 60px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+
+    .anticon {
+      font-size: 20px;
+      margin: 0 0 4px;
+    }
+  }
+
+  .ant-menu-item-selected {
+    color: #ff8c69;
+    background: transparent;
+  }
+}
