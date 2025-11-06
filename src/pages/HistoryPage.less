@@ -1,0 +1,73 @@
+.history-page {
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+
+  .history-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2e2e2e;
+  }
+
+  .clear-button {
+    color: #ff4d4f;
+    border-color: #ff4d4f;
+  }
+}
+
+.history-list {
+  flex: 1;
+  overflow-y: auto;
+
+  .history-item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .history-content {
+      width: 100%;
+    }
+
+    .history-date {
+      font-size: 14px;
+      color: #8b95a5;
+      margin-bottom: 4px;
+    }
+
+    .history-preview {
+      font-size: 16px;
+      color: #2e2e2e;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.empty-history {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clear-confirm-modal {
+  .ant-modal-confirm-content {
+    margin-top: 12px;
+  }
+}
